@@ -9,7 +9,8 @@
 - `*` is the empty cell (use for splitting number).
 - `B` is the boundary cell.
 
-> ![NOTE] About number detection
+> [!NOTE]
+> About number detection
 > 
 > Each full of `1` strings is considered as a number.
 > Value is `<number of 1> - 1`, for example `1111` is `3`.
