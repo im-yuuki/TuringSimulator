@@ -51,16 +51,16 @@ class TuringMachine:
 
     def print(self):
         count = 0
-        num_list = []
+        detected_number = []
         for state in self.tape:
             print(state.value, end="")
             if state == Data.ON: count += 1
             else:
-                if count > 0: num_list.append(count - 1)
+                if count > 0: detected_number.append(count - 1)
                 count = 0
-        if count > 0: num_list.append(count - 1)
+        if count > 0: detected_number.append(count - 1)
         print()
-        print("Detected number:", " ".join(map(str, num_list)))
+        print("Detected number:", " ".join(map(str, detected_number)))
 
 
 if __name__ == "__main__":
